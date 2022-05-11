@@ -3,6 +3,12 @@ import { CategoryButton } from '../components/CategoryButton';
 import { MovieCard } from '../components/MovieCard';
 import popularImg from '../assets/images/popcorn.png'
 import nowPlayingImg from '../assets/images/seats.jpeg'
+import axios from 'axios';
+
+axios.get('http://localhost:1337/api/movies').then(response => {
+  console.log(response);
+});
+
 
 const API_KEY = "c275787762fb2904adb52c4ad6412662";
 
